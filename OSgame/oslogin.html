@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+	<title>OS Game</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/div.js"></script>
+	<script language=javascript style="position: absolute;">
+
+	    function change(){ 
+			document.getElementById("Send").src="img/Moocs_切片-2-89.png";
+	    }
+		
+		function check(){
+		  var id=document.getElementById("user_id").value;
+          var pw=document.getElementById("user_pw").value;
+		  var regExp = /^[\d|a-zA-Z]+$/; 
+		  if ( regExp.test(id) && regExp.test(pw) ) window.location.href = "connect.php?id=" + id +  "&pw=" + pw;
+		  else if ( !regExp.test(id) && regExp.test(pw) ) alert( "帳號請用英文+數字" );
+		  else if ( regExp.test(id) && !regExp.test(pw) ) alert( "密碼請用英文+數字" );
+		  else  alert( "帳號和密碼請用英文+數字" );
+		 
+        }
+		
+
+    </script>		
+</head>
+<body>
+<div class="div1">
+	<div class="header_moocs2_1">
+		<p>登 入 帳 號</p>
+	</div>
+	<div class="content_moocs2_1">
+		<div class="content_moocs2_1_top_div">
+			<p>帳 號：</p>
+			<input type="text" id = "user_id" name = "id" class="content_moocs2_1_input"/><br><br><br>
+			<p>密 碼：</p>
+			<input type="password" id = "user_pw" name="pw" class="content_moocs2_1_input"/>
+		</div>
+		<a><input type="image"  name = "button" class = "imageBtn2" onClick="check()" id="Send" onmousedown="change();" src="img/Moocs_切片2-202.png" /></a>	
+		
+	</div>
+	<div class="footer_moocs2_1" >
+	    <!--<div class="content_moocs2_1_bottom_mid" >
+		   <a href="moocs2_0.html"><p>註冊帳號</p></a>
+	    </div-CSS要一起改>
+		<a><input type="image"  name = "button" class = "imageBtn2" onClick="cancel()" src="img/Moocs-93.png" /></a>-->
+
+	</div>
+</div>
+
+  
+</body>
+</html>

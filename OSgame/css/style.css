@@ -1,0 +1,1294 @@
+﻿
+.div1,.div2,.header_1,.footer_1,.back,.sure,.btn-1,.btn-2,.btn-3,.btn_1,.btn_2,.footer_btn,.login_btn,.footer_QA,.person_img,.person_img2,.person_name,.header_center,.friend_photo,.content_moocs2_1_input,.content_moocs3_1_course{
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+.div1{
+	
+	width:100%;
+	height:100%;
+	background-image:url(../img/Moocs-02.png);
+	background-attachment:fixed;
+	position:absolute;
+	background-size:100% 100%;
+	top:0px;
+	left:0px;
+	text-shadow: 1px 1px 0 #336699,-1px -1px 0 #336699;
+	overflow: hidden !important;
+	
+}
+
+.div2{
+	
+	width:100%;
+	height:100%;
+	background-image:url(../img/Moocs-01.png);
+	background-attachment:fixed;
+	position:absolute;
+	background-size:100% 100%;
+	top:0px;
+	left:0px;
+	
+	
+}
+
+.div3{
+	
+	width:100%;
+	height:100%;
+	background-image:url(../img/Moocs-44.png);
+	background-attachment:fixed;
+	position:absolute;
+	background-size:100% 100%;
+	top:0px;
+	left:0px;
+	
+	
+}
+
+.divQA{
+	
+	width:100%;
+	height:100%;
+	background-image:url(../img/Moocs-04.png);
+	background-attachment:fixed;
+	position:absolute;
+	background-size:100% 100%;
+	top:0px;
+	left:0px;
+	
+	
+}
+
+/*----head style start--*/
+.header{
+	height:10%;
+	
+}
+.header_QA{
+	
+	
+	position:relative; 
+	margin:0px auto; 
+	width:90%;
+	height:20%;
+}
+
+.header_1{
+	
+	/*background-image:url(../img/Moocs-78.png);*/
+	position:relative; 
+	margin:0px auto; 
+	width:90%;
+	height:50%;
+	top:10%;
+}
+
+.header_left{
+	float:left;
+	margin-left:2%;
+	font-size:94%;
+	color:#ffffff;
+	margin-top:2.3%;
+	margin-bottom:0%;
+	font-weight: bolder;
+	
+}
+
+.header_center{
+	float:left;
+	
+	margin-left:3%;
+	margin-top:2%;
+	margin-bottom:0%;
+	width:45%;
+	height:45%;
+
+}
+.header_right{
+	
+	float:right;
+	margin-right:10%;
+	font-size:130%;
+	color:#ffffff;
+	margin-top:2%;
+	margin-bottom:0%;
+	font-weight: bolder;
+}
+.header_right_QA{
+	
+	float:right;
+	
+	font-size:93.7%;
+	color:#ffffff;
+	margin-right:2%;
+	
+
+}
+
+.header_2{
+	
+	position:relative;
+	width:90%;
+	height:50%;	
+	margin:3% 0% 0% 5%;
+}
+
+.header_moocs3_1{
+	margin: 0px auto;
+	width:90%;
+	height:50%;
+}
+.header_moocs3_1_top{
+	margin: 0px auto;
+	width:90%;
+	height:20%;
+}
+.header_moocs3_1_mid{
+	margin: 0px auto;
+	width:90%;
+	height:60%;
+}
+.header_moocs3_1_mid_left{
+	width:40%;
+	height:80%;
+	display: table; 
+	float: left; 
+}
+.header_moocs3_1_mid_right{
+	width:45%;/*55%0421*/
+	height:auto;
+	margin:5% 0% 0 0;
+	float: right; 
+}
+
+.header_moocs3_1_mid_right p{
+	color:black;
+	font-size:118.7%;
+	font-family:微軟正黑體;
+	text-shadow: 1px 1px 0 #cbc1a9, -1px -1px 0 #efefef, 1px 1px 0 #ffffff, -1px -1px 0 #ffffff;
+    font-weight: bold;
+}
+.header_moocs3_1_bottom{
+	margin: 2% auto 0%;
+	width:100%;
+	height:10%;
+}
+.header_moocs3_1_bottom p{
+    color: black;
+    font-size: 150%;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+}
+/*---header style end---*/
+
+/*----content style start-----*/
+
+.content {
+	margin:5% 0% 0%;
+	width:90%;
+	color:white;
+	font-size:156.2%;
+	font-family:微軟正黑體;
+	
+}
+.content p{
+	margin: 3% 0% 10% 5%;
+    width: 90%;
+    color: black;
+    font-size: 100%;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+	
+}
+
+
+.content_login{
+	
+	width:90%;
+	height:60%;
+	margin: 40% auto 0%;
+}
+
+.content_QA{
+    position: relative;
+    margin: 0px auto;
+    width: 90%;
+    height: 65%;
+    overflow: auto;
+}
+
+.pic{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 0px;
+        overflow: hidden;
+        border: 0px;
+ }
+
+
+
+.content_QA_1{
+	position: absolute; 
+	width:100%;
+	height:10%;
+	margin: 0% 0% 0% 0%;
+	z-index: 999;
+	
+}
+
+.content_QA_1 p{
+	margin: 0% auto ;
+	width:90%;
+	color:white;
+	font-size:130%;
+	font-family:微軟正黑體;
+	text-align:justify;
+	font-weight: bolder;
+    text-shadow: 0 0px 5px black;
+	
+}
+
+.content_QA_2{
+	position: absolute;	
+	height:60%;
+	width:100%;
+	margin: 50px 0% 0% 0%;	
+}
+.content_QA_2_1{
+	width:100%;
+	height:50%;
+	margin: 0px auto;
+}
+
+.QA{
+	width:90%;
+	height:30%;
+	margin: 0% auto ;
+}
+
+#ansmask {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  z-index: 9000;
+	  background-color: #000;
+	  display: none;
+}
+
+#intmask{
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  z-index: 9000;
+	  background-color: #000;
+	  display: none;
+}
+
+#qusmask {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  z-index: 9000;
+	  background-color: #000;
+	  display: none;
+}
+
+#experience_Image {
+	  position: absolute;
+	  left: 0;
+		top: 17%;
+	  width: 100%;
+	  z-index: 9000;
+	  background-color: #000;
+	  display: none;
+}
+
+#person_head_content {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  z-index: 9000;
+	  background-color: #ffffff;
+	  display: none;
+	  overflow: auto;
+}
+
+.whymask {
+	  width: 30%;
+	  z-index: 9000;
+	  background-color: #000;
+}
+
+.pheadmask {
+	  height: auto;
+	  width: 33%;
+	  z-index: 9000;
+}
+
+.whymasktop {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  z-index: 9001;
+	  background-color: #000;
+}
+
+#poemmask{
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  z-index: 9000;
+	  background-color: #000;
+	  display: none;	  
+}
+
+.content_2{
+	
+	width:100%;
+	height:90%;
+	margin: 0px auto;
+}
+.content_2_1_1{
+	
+	height:40%; /*45%*/
+}
+
+
+.content_2_1{
+	
+	height:48%;
+}
+
+.content_2_2{
+	
+	height:48%;
+}
+
+
+.content_what{
+	margin: 0px auto;
+	width:90%;
+	height:75%; /*65%*/
+}
+
+.content3_3{
+	margin: 0px auto;
+	width:90%;
+	height:85%; 
+	
+}
+
+.content3_3_1{
+	height:79%;
+	margin: 0px auto;
+	width:95%;
+	
+	
+}
+.content3_3_2{
+	height:35%;
+	margin: 0px auto;
+	width:95%;
+	float:right;
+}
+.content3_3_3{
+	height:15%;
+	margin: 0px auto;
+	width:95%;
+}
+.content3_3_3 p{
+	color:black;
+	font-size:375%;
+	text-align:center;
+	font-weight:bold;
+	margin:0%;
+}
+.content3_3_pl{
+	
+	width:auto;
+	margin-top:5%;
+}
+
+.content3_3_pl p{
+	
+	color:black;
+	font-size:125%;
+	font-family:微軟正黑體;
+	font-weight: bold;
+    text-shadow: 1px 1px 0 #cbc1a9, -1px -1px 0 #efefef, 1px 1px 0 #ffffff, -1px -1px 0 #ffffff;
+}
+
+.content3_3_pr{
+	margin: 8% 10% 0% 0%;
+	
+	width:50%;
+	
+}
+
+.content3_3_pr p{
+	
+	color:white;
+	font-size:156.2%;
+	font-family:微軟正黑體;
+	
+	text-shadow: 1px 1px 0 #336699,-1px -1px 0 #336699,1px 1px 0 #336699,-1px -1px 0 #336699;
+	text-align:right;
+}
+
+
+.content_left{
+	width:40%;
+	height:60%;
+	margin-top:10%;
+}
+.content_right{
+	width:40%;
+	height:60%;
+	float:right;
+
+}
+
+.score{
+	width:60%;
+	height:60%;
+	float:left;
+	margin: 3% 0% 0% 0%;
+}
+
+.content_f{
+	margin: 0px auto;
+	width:90%;
+	height:83%;
+	overflow: hidden;
+}
+.content_f p{    /*重點整理*/
+    margin: 3% 0% 1% 0%;
+    width: 90%;
+    color: black;
+    font-size: 150%;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+	
+}
+
+
+.friend_content{
+	overflow-y:auto;
+	margin: 0px auto;
+	width:100%;
+	height:83%;
+}
+
+.pdf_content{
+	overflow-y:auto;
+	margin: 0px auto;
+	width:100%;
+	height:83%;
+}
+
+.pdf_content p{
+	margin:5% 0% 1% 0%;
+	width:90%;
+	color:blue;
+	font-size:150%;
+	font-family:微軟正黑體;
+}
+
+.friend_info{
+	color: black;
+    font-size: 118.7%;
+    font-family: 微軟正黑體;
+    text-shadow: 1px 1px 0 #cbc1a9, -1px -1px 0 #efefef, 1px 1px 0 #ffffff, -1px -1px 0 #ffffff;
+    font-weight: bold;
+}
+
+.one_friend{
+	margin: 2% auto 2%;
+	width:100%;
+	height:20%
+}
+
+
+.date_mail{
+	
+	margin: 0% auto 0%;
+	width:100%;
+	height:auto;
+	float:left;
+}
+.date_mail p{
+	color:white;
+	font-size:125%;
+	margin: 0% 0% 2% 0%;
+	font-family:微軟正黑體;
+	height:15%;
+}
+.one_mail{
+	margin: 0% auto 4%;
+	width:100%;
+	height:30%;
+	float:left;
+
+}
+
+
+.content_moocs3_1{
+	margin: 0px auto;
+	width:100%;
+	height:50%;
+	overflow:auto;
+	
+}
+.content_moocs3_1_course{
+	
+	width:100%;
+	height:15%;
+
+}
+
+.content_moocs3_1_course p{
+	color:white;
+	font-size:143.7%;
+	margin:0% auto;
+	text-align:center;
+	padding-top:2%;
+}
+.course_data1{
+	color:black;
+	font-size:143.7%;
+	font-family:微軟正黑體;
+	margin:2.5% 0% 0% 10%;
+	float:left;
+	font-weight: bold;
+	position: absolute;
+}
+
+.course_data2{
+	color:black;
+	font-size:143.7%;
+	font-family:微軟正黑體;
+	float:right;
+	margin:2.5% 5% 0% 0%;
+	font-weight: bold;
+	position: absolute;
+	right: 0%;
+}
+
+/*詩籤*/
+.poempage{
+	margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+	width:83%;
+    height: 80%;
+    overflow: auto;
+
+}
+
+.title_poem{
+	color:red;
+	font-size:200%;
+	font-family:標楷體;
+	font-weight:bolder;
+	text-align: center;
+	
+}
+
+.content_poem{
+	color:blue;
+	font-size:150%;
+	font-family:標楷體;
+	font-weight:bolder;
+	text-align: center;
+	
+}
+
+
+.detail_poem{
+	color:black;
+	font-size:130%;
+	font-family:標楷體;
+	font-weight:bolder;
+    text-align: left;
+
+}
+
+
+/*------------4.3學習回顧的框--------------*/
+.content_moocs3_2{
+
+	width:100%;
+	height:83%;
+	overflow:auto;
+
+	
+}
+.content_moocs3_2_course{
+	
+	width:100%;
+	height:auto;
+
+}
+
+
+/*---content style end----*/
+
+
+/*---button style start---*/
+.login_btn{
+	
+	width:90%;
+	height:30%;
+	margin: 0% auto;
+	
+}
+
+.btn_1{
+	width: 30%;
+    height: 70%;
+    float: left;
+    margin: 0% 10%;
+    text-align: center;
+	
+}
+
+.btn_1 p{
+
+
+    color: black;
+    font-size: 150%;
+    font-family: 標楷體;
+    text-shadow: 1px 1px 0 #cb984b, -1px -1px 0 #ffffff, 1px 1px 0 #cb984b, -1px -1px 0 #ffffff;
+    font-weight: bold;
+}
+
+.logout{
+
+
+	color:white;
+	font-size:125%;
+	font-family:微軟正黑體;
+	
+	text-shadow: 1px 1px 0 #336699,-1px -1px 0 #336699,1px 1px 0 #336699,-1px -1px 0 #336699;
+}
+
+.btn_1 img{
+	width:auto;
+	height:70%;
+}
+.btn_2{
+width: 30%;
+    height: 70%;
+    float: left;
+    margin: 0% 10%;
+    text-align: center;
+}
+
+.btn_2 p{
+    color: black;
+    font-size: 150%;
+    font-family: 標楷體;
+    text-shadow: 1px 1px 0 #cb984b, -1px -1px 0 #ffffff, 1px 1px 0 #cb984b, -1px -1px 0 #ffffff;
+    font-weight: bold;
+}
+
+.btn_2 img{
+	width:auto;
+	height:70%;
+}
+.footer3_3_btn{
+	z-index: 1000;
+	background-repeat: no-repeat;
+	width:30%;
+	height: 50%;
+	margin: 0% 1.5% 0% 1.5%;
+	float:left;
+	background-size:100%;
+
+}
+
+.back{
+	
+    width: 75px;
+    height: 23px;
+	float:left;
+	
+}
+
+.sure{
+	
+	float:right; 
+	width:auto; 
+	height:20%; 
+	margin-top:15%;
+	
+}
+
+.btn-1{
+	
+	margin:3%;
+    width: 87.4px;
+    height: 80.3px;
+
+	float:left;
+	
+
+}
+
+.btn-2{
+	
+	
+	margin: 3%;
+    width: 87.4px;
+    height: 80.3px;
+	
+	float:left;
+	
+
+}
+.btn-3{
+	
+	margin:3%;
+    width: 87.4px;
+    height: 80.3px;
+	
+	float:left;
+	
+
+}
+
+.ui-btn
+{
+	word-break: normal;
+	text-overflow:initial !important;
+	white-space:normal !important;
+}
+
+.btn_QA1{
+	z-index: 15; 
+	width:100%; 
+	background-color:#ffffff;
+	font-size:125%;
+	font-family:微軟正黑體;
+	text-align:center;
+
+}
+
+
+
+
+
+	/*float:left;
+	margin:0% auto 5%;
+	background-size: 100% 100%;
+	padding-top:1.5%;
+
+.btn_QA1 p{
+	font-size:800%;
+	font-family:微軟正黑體;
+	text-align:center;
+	margin:0% auto;
+	padding-top:3.5%;*/
+}
+
+.btn_QA2{
+	width:30%; 
+	height:70%; /*70%100%*/
+	float:left;
+	margin:0% 15% 0% 5%;
+	background-size: 100% 100%;
+	background-color:#ffffff;
+}
+.btn_QA2 p{
+	text-align:center;
+	font-size:500%;
+	font-family:微軟正黑體;
+	
+}
+
+.footer_btn{
+	float:right; /*left*/
+	width:10%; 
+	height: 50%;
+  margin-right: 5%;
+  margin-top: 10%;
+	
+}
+.showint{
+	float:right; /*left*/
+	width:10%; 
+	height: 50%;
+  margin-right: 5%;
+  margin-top: 10%;
+	
+}
+.moocs2_1_checkbox{
+	border: 20% solid #B9BBBE;
+	margin-top:0;
+	min-width:25%;
+	min-height:25%;
+}
+
+
+/*---button style end---*/
+
+/*---image style start---*/
+/*---.content3_3_img{
+	width:100%;
+	height:70%;
+	background-size:100% 100%;
+	margin-top:10%;
+	border-right:3px solid #fff;
+	border-left:3px solid #fff;
+	border-bottom:30px solid #fff;
+	border-top:5px solid #fff;
+	
+}---*/
+
+.one_friend img{
+	width:auto;
+	height:100%;
+	
+
+}
+
+.content_left img,#result_img{
+	width:auto;
+	height:auto;
+
+	
+}
+
+.content_right img{
+	width:auto;
+	height:100%;
+	margin-top:20%;
+	border-right:3px solid #fff;
+	border-left:3px solid #fff;
+	border-bottom:30px solid #fff;
+	border-top:5px solid #fff;
+	
+}
+.person_img{
+	/*background-image:url(../img/Moocs-25.png);*/
+	width:25%;
+	height:100%;
+	/*margin: 5% auto 0%;*/
+	float:left;
+
+
+}
+
+.person_img2{
+	/*background-image:url(../img/Moocs-26.png);*/
+	width:15%;
+	height:50%;
+	float:right;
+	/*margin: 5% auto 0%;*/
+
+}
+.person_name{
+	width:auto;
+	height:auto;
+}
+
+
+.img_right{
+	margin: 0px 2% 0% 0%;
+	width:100%;
+	float:right;
+
+}
+.img_right img{
+	margin: 0px auto;
+	margin: 0px auto;
+	width:90%;
+	float:right;
+
+}
+
+.img_left{
+	margin: 0px 0% 0% 2%;
+	width:100%;
+	float:left;
+
+}
+.img_left img{
+	margin: 0px auto;
+	width:90%;
+	float:left;
+
+}
+.friend_photo,.text_photo{
+	float:left;
+	
+}
+.friend_photo{
+	width:100%;
+	height:100%;
+
+}
+
+.text_photo{
+	width:60%;
+	height:20%;
+	margin-bottom:5%;
+}
+.animal_photo{
+	float:right;
+	width:20%;
+	height:auto;
+	margin-right:10%;
+	margin-bottom:5%;
+}
+
+
+
+#person {
+	
+	width:auto;
+	height:90%;
+	margin: 0px auto;
+ /* border-right: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-bottom: 30px solid #fff;
+  border-top: 10px solid #fff;*/
+
+    margin-bottom: 5%;
+
+}
+#result_img{
+	width:50%;
+	height:50%;
+	margin: 5% auto 0%;
+	float:left;
+
+}
+#result_img_result{
+width: 100%;
+    height: auto;
+
+}
+
+.header_moocs3_1_mid_left img{
+	margin:0 15% 0;
+
+}
+.moocs3_1_img{
+	background-image:url(img/Moocs-25.png);
+	width: 80%;
+	height: 80%;
+	background-size: 100% 100%;
+	margin: 0px auto;
+  border-right: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-bottom: 30px solid #fff;
+  border-top: 10px solid #fff;
+
+    margin-bottom: 5%;
+  }
+  
+  .moocs3_1_img{
+	background-image:url(img/Moocs-25.png);
+	width: 80%;
+	height: 80%;
+	background-size: 100% 100%;
+	margin: 0px auto;
+  border-right: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-bottom: 30px solid #fff;
+  border-top: 10px solid #fff;
+
+    margin-bottom: 5%;
+  }
+
+ .header_moocs3_1_top input{
+	margin:5% 0% 0%;
+	
+ }
+
+ .header_moocs3_1_bottom img{
+	width:5%;
+	height:5%;
+ }
+/*---image style end---*/
+
+/*---footer style start---*/
+
+.footer{
+	margin: 0px auto;
+	width:90%;
+	height:20%;
+	opacity: 0.8;
+	
+	top:10%;
+}
+.footer_1{
+
+	background-position:center;
+
+	position:relative;
+	
+	margin: 0px auto;
+	width:90%;
+	height:100%;
+	
+}
+
+.footer_1 img{
+	width:auto;
+	height:30%;
+	margin:2% 1% 0%;
+	border:2px solid rgba(0, 0, 0, .8);
+}
+.footer_QA{
+	
+    position: relative;
+    margin: 0px auto;
+    width: 90%;
+    height: 10%;
+	
+	
+}
+
+.footer_QA p{
+	margin-top:0%;
+	margin-bottom:0%;
+	font-size:125%;
+	font-family:微軟正黑體;
+	color:#ffffff;
+}
+.footer_QA img{
+	margin: 0px auto;
+	width:100%;
+	
+	
+}
+
+.footer-1{
+	margin: 0px auto;
+	height:15%;  /*10%*/
+	top:10%;
+}
+
+.footer3_3{
+	margin: 0% 10%;
+	height:10%;  /*10%*/
+	width:auto%;
+	
+}
+
+.footer3_3_btn{
+	
+	background-repeat: no-repeat;
+	width:30%;
+	height: 50%;
+	margin: 0% 1.5% 0% 1.5%;
+	float:left;
+	background-size:100%;
+
+}
+
+.imageBtn1 {   
+	width: 15.7%;
+	height: 43%;
+	margin-left:20%;
+	margin-top:10%;
+}
+	
+table img{
+width:auto;
+height:50%;
+
+}
+
+#process_bar {
+    background-image: url(../img/player_bar.gif);
+    height: 100%;
+    text-align: right;
+    width: auto;
+    background-color: #000000;
+}
+
+#enemy_bar {
+    background-image: url(../img/enemy_bar.gif);
+    height: 100%;
+	float: right;
+    text-align: right;
+    width: auto;
+    background-color: #000000;
+}
+
+.skill_img{
+
+    width: 100%;
+    height: 18%;
+    border: solid;
+    border-color: black;
+    border-width: thin;
+
+}
+
+.container {
+    overflow: hidden;
+}
+.enemy_name_right {
+    float: right;
+    width: auto;
+}
+.person_name_left {
+    float: left;
+    width: auto;
+}
+.middle {
+    margin: 0 100px;
+}
+
+
+
+
+.googleSlideshow{
+  width:100%;
+ height:calc(100% - 29px);
+  overflow:hidden;
+  position:relative;
+}
+.googleSlideshow iframe{
+  width:100%! important;
+ height:calc(100% - 29px);
+}
+
+
+/********************************************************moocs2-1*************************************************/
+.header_moocs2_1{
+	height:30%;
+	width:90%;
+	margin: 0px auto;
+	text-align: center;	
+}
+.content_moocs2_1{
+	margin: 0px auto;
+	width:90%;
+	height:30%;
+	text-align: center;	
+}
+.footer_moocs2_1{
+	position: relative;
+	width:90%;
+	height:20%;
+}
+.header_moocs2_1 p{
+	color:white;
+	text-shadow: black 0px 0px 50px;
+	font-size:580%;
+	font-family:標楷體;
+	font-weight: bold;
+	display:inline ;	
+    top: 50%;
+    position: relative;
+}
+.content_moocs2_1 p{
+	
+	display:inline ;
+	position:relative; 
+	color:black;
+	text-shadow: white 0px 0px 100px;
+	font-size:312.5%;
+	font-family:標楷體;
+	font-weight: bold;	
+	
+}
+.content_moocs2_1_input{
+	background-image:url(../img/Moocs-90.png);
+	width:50%;
+	height:30%;
+	font-size:280%;
+	
+	
+}
+.content_moocs2_1_top_div{
+    position: relative;
+    top: 10%;
+	
+}
+.imageBtn2 {   
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 40%;
+    top: 61%;
+    opacity:0.8;
+    z-index: 999;
+}
+
+/*
+.content_moocs2_1_top{
+	margin: 0px auto;
+	width:100%;
+	height:30%;
+}
+.content_moocs2_1_top_div img{
+	left:5%;
+	top:25%;
+	position:relative; 
+}*/
+
+/*.content_moocs2_1_mid{
+	background-image:url(../img/Moocs_切片-2-100.png);
+	background-size:100% 100%;
+	position:relative; 
+	width:100%;
+	height:90%;
+	color:black;
+	max-font-size:180%;
+	font-family:微軟正黑體;
+}
+
+.content_moocs2_1_bottom{
+	position: absolute;
+	margin: 0px auto;
+	width:100%;
+	height:20%;
+}
+.content_moocs2_1_bottom_mid{
+	width:50%;
+	margin: 1% auto;
+	height:90%;
+}
+
+.content_moocs2_1_bottom_mid p{
+	font-family:微軟正黑體;
+	font-size:280%;
+	color:black;
+	margin: 3% 10% 3% 2%;
+	font-weight: bold;
+	
+}
+
+.footer_moocs2_1_left img{
+	width:20%;
+	display: table; 
+	float: left; 
+	height:auto;
+	margin-left:20% ;			
+}
+
+.footer_moocs2_1_right img{                          
+	width:20%;
+	display: table; 
+	float: left; 
+	height:auto;
+	margin-left:20% ;	
+}
+*/

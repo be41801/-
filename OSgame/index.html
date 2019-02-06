@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes", charset="UTF-8">
+  <title>OS Game</title>
+  
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.core.css" rel="stylesheet">  
+  <link href="//cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.default.css" rel="stylesheet">  
+</head>
+<body>
+
+<!-- 主畫面 -->
+<div data-role="page" id="page_home" class="div1" >
+	<div class="header">
+		<div class="header_1">
+		  <div class="class_level header_left" ></div>
+		  <div class="header_center">
+		    <div class="progress" >	     
+		      <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>		
+            </div>
+		  </div>
+		  <div class="class_money header_right"></div>
+		
+		</div>
+	</div>
+	<div class="content_what">
+	    <div class="logout" onclick="fb_logout()"><u>登出</u></div>
+		<div class="content_2">
+			<div class="content_2_1_1">
+				<a href="#page_userinfo"><div id="bn_goto_userinfo" class="btn_1"><img src="img/Moocs_切片2-85.png"/><p>個人資訊</p></div></a>
+				
+				<a href="#page_rank"><div id="bn_goto_rank" class="btn_2"><img src="img/Moocs_切片2-86.png"/><p>玩家排行</p></div></a>
+			</div>
+			<div class="content_2_1_1">
+				<a href="#page_stage"><div id="bn_goto_stage" class="btn_1"><img src="img/Moocs_切片2-87.png"/><p>開始求籤</p></div></a>
+				
+				<a href="#page_skill"><div id="bn_goto_skill" class="btn_2"><img src="img/Moocs_切片2-88.png"/><p>詩籤兌換</p></div></a>
+			</div>
+			<div class="content_2_1_1">
+				<a href="#page_message"><div id="bn_goto_message" class="btn_1"><img src="img/Moocs_切片2-89.png"/><p>學習回顧</p></div></a>
+				<a href="#page_pdf"><div id="bn_goto_pdf" class="btn_2"><img src="img/Moocs_切片2-90.png"/><p>重點整理</p></div></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-1">
+		<div class="footer_btn" style="background-image:url(img/Moocs-13.png);"></div>
+		<div class="footer_btn" style="background-image:url(img/Moocs-12.png);"></div>
+		
+	</div>
+
+
+
+</div>
+
+<!-- 玩家資訊 -->
+<div data-role="page" id="page_userinfo" class="div1">
+
+	<div class="header_moocs3_1">
+		<div class="header_moocs3_1_top">
+			<a href="#page_home"><input type="image" class="back" name = "button" src="img/Moocs-24.png" /></a>
+		</div>
+		<div class="header_moocs3_1_mid">
+			<div class="header_moocs3_1_mid_left">
+				<img id="person" />
+			<a class="person_head_change"><input type="image" src="img/Moocs-84.png" name="button" style="height: 28px; width: 80px; opacity: 0.9;" /></a>	
+			</div>
+			<div class="header_moocs3_1_mid_right">
+			
+			<p id="user_info"></p>
+			
+			</div>
+		</div>
+		<div id="person_head_content">
+			
+		</div>
+		<div class="header_moocs3_1_bottom">
+		<p>個人資訊</p>
+		</div>
+		
+	</div>
+    <div class="content_moocs3_1" id="user_record" >
+    </div>
+</div>
+<!-- 關卡選擇 -->
+<div data-role="page" id="page_stage" class="div1">
+
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>
+		  
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content">
+		<p>
+		  開始求籤-選擇章節
+		</p>
+		<div class="content_2">
+			
+			<div class="content_2_1">
+				<a><input id="bn_co_os" type="image"  name = "button" onmousedown="stage_change('bn_co_os');" src="img/Moocs-14.png" class="btn-1 bn_course"/></a>
+				<a><input id="bn_co_music" type="image"  name = "button" onmousedown="stage_change('bn_co_music');" src="img/Moocs-15.png" class="btn-2 bn_course"/></a>
+				<a><input id="bn_co_science" type="image"  name = "button" onmousedown="stage_change('bn_co_science');" src="img/Moocs-16.png" class="btn-3 bn_course"/></a>
+			</div>
+			<div class="content_2_2">
+				<a><input id="bn_co_creative" type="image"  name = "button" onmousedown="stage_change('bn_co_creative');" src="img/Moocs-17.png" class="btn-1 bn_course"/></a>
+		  	    <a><input id="bn_co_culture" type="image"  name = "button" onmousedown="stage_change('bn_co_culture');" src="img/Moocs-18.png" class="btn-2 bn_course"/></a>
+			    <a><input id="bn_co_system" type="image"  name = "button" src="img/Moocs-19.png" class="btn-3"/></a>
+			</div>
+<!-- 
+onmousedown="stage_change('bn_co_music');" class="btn-2 bn_course"
+onmousedown="stage_change('bn_co_science');" bn_course
+onmousedown="stage_change('bn_co_creative');" bn_course
+onmousedown="stage_change('bn_co_culture');" bn_course
+onmousedown="stage_change('bn_co_system');" bn_course JS也要改 
+-->
+		</div>
+	</div>
+	
+	<div>
+	      <a><input type="image" id="bn_goto_play"  name = "button" src="img/subm.png" style="width: auto; height: 6%;  position: absolute;  margin-left: 58%; bottom: 10%; display:none;"/></a>
+	</div>
+	
+
+</div>
+
+<!-- 開始遊戲 -->
+<div data-role="page" id="page_play" class="divQA">
+
+	<div class="header_QA" >
+	    <div class='container'>
+	    <div id = "user_name" class='person_name_left';></div>
+	    <!--<div id = "enemy_name" class='enemy_name_right'></div>-->
+	    </div>
+
+		<div id = "user_img" class="person_img"></div>
+		
+		<div class="score">
+		<div class="header_right_QA"></div>
+		<!--<div class="img_right"><div id= "enemy_bar"></div></div>-->
+		<div class="header_left"></div>
+		<div class="img_left"><div id= "process_bar"></div></div>
+		
+        </div>
+		
+	</div>
+
+	<div class="content_QA">
+		<div class="content_QA_1">
+			<p id="p_ques"></p>
+		</div>
+
+		<div class="content_QA_2">		
+				<button id="bn_ans1" class="bn_answer btn_QA1"></button>
+				<button id="bn_ans2" class="bn_answer btn_QA1"></button>
+				<button id="bn_ans3" class="bn_answer btn_QA1"></button>
+				<button id="bn_ans4" class="bn_answer btn_QA1"></button>
+		</div>>
+		<!--!!!圖片改下一題 -->
+	</div>
+
+	<div class="footer_QA">
+		<a class="showImage"><input type="image" id="showimg" name = "button" src="img/Moocs_切片2-78.png" style="width: 123px; height: 39px;z-index:10;  position: absolute;  bottom:20%;left: 30%;display:none;"/></a>
+		<a class="showansImage"><input type="image" id="showansimg" name = "button" src="img/Moocs-93.png" style="width: 123px; height: 39px;z-index:10;  position: absolute;  bottom:20%;left: 5%;display:none;"/></a>
+		<a><input type="image" id="bn_next"  name = "button" src="img/Moocs_切片2-20.png" style="width: 123px; height: 39px;z-index:10;  position: absolute;  bottom:20%;right: 5%;display:none;"/></a>	
+		<a><input type="image" id="bn_sub"  name = "button" src="img/subm.png" style="width: 123px; height: 39px;z-index:10;  position: absolute;  bottom:20%;right: 5%;display:none;"/></a>				
+	</div>
+		<a><input type="image" id="qusmask"  name = "button" src="#"/></a>
+	  	<a><input type="image" id="ansmask"  name = "button" src="#"/></a>
+	  	<p id="conceptmap_ques" style="height: auto;background-color: white;position: absolute;width: 100%;top: 0;z-index: 9100;opacity: 0.1;display:none;" onclick="showques()";></p>
+</div>
+</div>
+<!-- 結果頁 -->
+<div data-role="page" id="page_result" class="div1" >
+
+	<div class="content3_3">
+		<div class="content3_3_1">
+			<div class="content_left" id = "result_img">
+			<img id = "result_img_result"/>
+			
+			</div>
+				<div class="content3_3_pl">
+				  <p id="p_result"></p>				
+				</div>
+
+		</div>
+		<div class="content3_3_3">
+			<p id="result"></p>
+		</div>
+		
+	</div>
+	<div class="footer3_3">
+		
+		<a><div id = "bn_goupdate_home" class="footer3_3_btn" style="background-image:url(img/Moocs2-95.png);"></div></a>
+		<a><div id = "bn_goupdate_stage" class="footer3_3_btn" style="background-image:url(img/subm.png);"></div></a>
+		<!--<div class="footer3_3_btn" style="background-image:url(img/Moocs_切片2-78.png);"></div>-->
+		
+	</div>
+	
+</div>
+
+
+
+<!-- 排行榜 -->
+<div data-role="page" id="page_rank" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class=" class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http://140.135.10.139/sia/osgame.html" target="_blank"><img src="img/fbShare.gif"></a>
+		</div>
+	</div>
+	<div class="content_f">
+		<p>玩家排行榜</p>
+		
+		<div class="friend_content" id = "user_rank"> 
+		   <!--
+			<div class="one_friend">
+				<img src="img/Moocs-74.png" class="friend_photo" />
+				<div class="friend_info">
+					玩家姓名<br>勝率：0.0%<br>登入次數：
+				</div>
+			</div>
+			-->
+			
+		</div>
+	</div>
+	
+</div>
+
+<!-- 學習回顧 -->
+<div data-role="page" id="page_message" class="div1" >
+	<a id="whymasktopid" style="display:none"><input type="image" id="whymasktop"  name = "button" src="#"/></a>
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+
+	<div class="content_f">
+	    
+		<p>
+		學習回顧
+		</p>
+    <div class="content_moocs3_2" id="play_record" >
+    </div>
+		
+	</div>
+	
+</div>
+
+
+
+<!--詩籤兌換-->
+<div data-role="page" id="page_skill" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content_f">
+		<p>
+		詩籤兌換
+		</p>
+		<div class="friend_content"> 
+			<a class="skill_game_experience_Image"><input type="image" id ="skill_game_experience" src="img/Moocs_game_experience.png" name="button" class="skill_img"/></a>
+
+		</div>
+	</div>
+	<a><input type="image" id="experience_Image"  name = "button" src="#"/></a>
+</div>
+
+<!-- 訊息通知 -->
+<div data-role="page" id="page_pdf" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content_f">
+	    
+		<p class="p1">
+		重點整理
+		</p>
+		<div class="pdf_content"> 
+		<a href="#page_chap1"><p>第一章</p></a>
+		<a href="#page_chap2"><p>第二章</p></a>
+		<a href="#page_chap3"><p>第三章</p></a>
+		<a href="#page_chap4"><p>第四章</p></a>
+		<a href="#page_chap5"><p>第五章</p></a>
+		<a href="#page_chap6"><p>第六章</p></a>
+		<a href="#page_chap7"><p>第七章</p></a>		
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<!-- 抽籤頁 -->
+<div data-role="page" id="page_poem" class="div1" >
+	<a><input type="image" id="poemmask"  name = "button" src="img/poem.jpg"/></a>
+</div>
+
+
+<!-- 抽籤頁 -->
+<div data-role="page" id="page_poem_result" class="div1" >
+	<div class="poempage">	    
+		<p class="title_poem" id="poem_title"></p>
+		<p class="content_poem" id="poem_content"></p>
+		<p class="detail_poem" id="poem_detail"></p>
+	</div>
+	<center><a><input type="image" id="bn_goto_homepage"  name = "button" src="img/subm.png" style="	padding-top:10px;width: 123px; height: 39px; z-index:1000;display:none; "/></center></a>
+</div>
+
+
+<!-- ____________________________________chap1____________________________________ -->
+<div data-role="page" id="page_chap1" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content_f">
+	    
+		<p>
+		第 一 章
+		</p>
+		<div class="googleSlideshow">
+		<iframe src="https://drive.google.com/file/d/0B3sfczRF7thuQ3BkaWhuOFpPNXM/preview"></iframe>
+		</div>
+	</div>
+	
+</div>
+
+<!-- ____________________________________chap2____________________________________ -->
+<div data-role="page" id="page_chap2" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content_f">
+	    
+		<p>
+		第 二 章
+		</p>
+		<div class="googleSlideshow">
+		<iframe src="https://drive.google.com/file/d/0B3sfczRF7thuYXlqSG40RE1HUTg/preview" width="580" height="480"></iframe>
+		</div>
+	</div>
+	
+</div>
+
+<!-- ____________________________________chap3____________________________________ -->
+<div data-role="page" id="page_chap3" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content_f">
+	    
+		<p>
+		第 三 章
+		</p>
+		<div class="googleSlideshow">
+		<iframe src="https://drive.google.com/file/d/0B3sfczRF7thuOWxwMjR0VTUzQ1U/preview" width="580" height="480"></iframe>
+		</div>
+	</div>
+	
+</div>
+
+<!-- ____________________________________chap4____________________________________ -->
+<div data-role="page" id="page_chap4" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content_f">
+	    
+		<p>
+		第 四 章
+		</p>
+		<div class="googleSlideshow">
+		<iframe src="https://drive.google.com/file/d/0B3sfczRF7thuTTlRRDA3YVI3ZXc/preview" width="580" height="480"></iframe>
+		</div>
+	</div>
+	
+</div>
+
+
+<!-- ____________________________________chap5____________________________________ -->
+<div data-role="page" id="page_chap5" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content_f">
+	    
+		<p>
+		第 五 章
+		</p>
+		<div class="googleSlideshow">
+		<iframe src="https://drive.google.com/file/d/0B3sfczRF7thudE05QUFaVmtMX0E/preview" width="580" height="480"></iframe>
+		</div>
+	</div>
+	
+</div>
+
+
+<!-- ____________________________________chap6____________________________________ -->
+<div data-role="page" id="page_chap6" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content_f">
+	    
+		<p>
+		第 六 章
+		</p>
+		<div class="googleSlideshow">
+		<iframe src="https://drive.google.com/file/d/0B3sfczRF7thuVElrRnpmd29fNE0/preview" width="580" height="480"></iframe>
+		</div>
+	</div>
+	
+</div>
+
+
+<!-- ____________________________________chap7____________________________________ -->
+<div data-role="page" id="page_chap7" class="div1" >
+	<div class="header">
+		<!--<button type="button" style="background-image:url(img/Moocs-24.png); width:80px; height:25px "></button> -->
+		<div class="header_1">
+		<div class="class_level header_left"></div>
+		<div class="header_center">
+		  <div class="progress" >	     
+		    <div  class="class_progress_bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>		
+          </div>
+		</div>	 
+		<div class="class_money header_right"></div>
+		</div>
+		<p></p>
+		<div class="header_2">
+			<a href="#page_home"><input type="image"  name = "button" src="img/Moocs-24.png" class="back"/></a>
+		</div>
+	</div>
+	<div class="content_f">
+	    
+		<p>
+		第 七 章
+		</p>
+		<div class="googleSlideshow">
+		<iframe src="https://drive.google.com/file/d/0B3sfczRF7thuOWNLYVhWVXV6Skk/preview" width="580" height="480"></iframe>
+		</div>
+	</div>
+	
+</div>
+
+
+</body>
+</html> 
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/index.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.min.js"></script> 
+<script src="js/div.js"></script>
+<script src="js/fb_logout.js"></script>
