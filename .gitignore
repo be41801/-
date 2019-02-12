@@ -1,0 +1,7 @@
+# 檔案名稱 .gitignore
+
+# 忽略 mysql_connect.inc.php 檔案
+OSgame/mysql_connect.inc.php
+
+# 忽略 node_modules資料夾
+ReactJS/TodoList/node_modules/
