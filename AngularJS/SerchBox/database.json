@@ -1,0 +1,34 @@
+{
+    "records":[
+        {
+            "Name":"Danny",
+            "Age":"26",
+            "Gender":"Male"
+        },
+        {
+            "Name":"Allen",
+            "Age":"16",
+            "Gender":"Male"
+        },
+        {
+            "Name":"Jan",
+            "Age":"22",
+            "Gender":"Female"
+        },
+        {
+            "Name":"Kone",
+            "Age":"36",
+            "Gender":"Male"
+        },
+        {
+            "Name":"Linda",
+            "Age":"14",
+            "Gender":"Female"
+        },
+        {
+            "Name":"Bella",
+            "Age":"16",
+            "Gender":"Female"
+        }
+    ]
+}

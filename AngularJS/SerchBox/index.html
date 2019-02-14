@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body ng-app="myAngularJS"><!--設定body為根元素 一個doc只有一個根 多的以最外層為主-->
+
+    <div ng-controller="people">
+        <ul>
+            <h2>Name And Age</h2>
+            
+            <li ng-repeat="person in persons | filter:globalSearch">
+                {{ "Name:" + person.Name + "___Age:" + person.Age + "___Gender:" + person.Gender}}
+            </li>
+        </ul>
+    </div>
+
+    <div id="searchBox">
+        Global Search Filter: <input type="text" ng-model="globalSearch.$"><br>
+        Name Search Filter: <input type="text" ng-model="globalSearch.Name"><br>
+        Age Search Filter: <input type="text" ng-model="globalSearch.Age"><br>
+        Gender Search Filter: <input type="text" ng-model="globalSearch.Gender">
+    </div>
+</body>
+</html>
